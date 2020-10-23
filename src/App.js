@@ -1,15 +1,14 @@
 import React from 'react';
-import './App.css';
 import FrontPage from './components/FrontPage'
 import Intro from './components/Intro'
-import Particles from 'react-particles-js'
-import styled from 'styled-components'
+import Aboutme from './components/Aboutme'
 
 function App() {
   return (
     <div className="App">
       <FrontPage />
       <Intro />
+      <Aboutme />
     </div>
   );
 }

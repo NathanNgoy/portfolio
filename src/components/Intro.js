@@ -16,7 +16,7 @@ const IntroBG = styled.div`
 
 const IntroText = styled.div`
     color: rgb(233, 233, 233);
-    font-family: sans-serif;
+    font-family: "Abel", sans-serif;
     font-size: 3rem;
 `;
 
