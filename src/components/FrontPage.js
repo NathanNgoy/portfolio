@@ -68,12 +68,16 @@ const Button = styled.div`
 const Asdf = styled.div`
 `;
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
-const useMountEffect = (fun) => useEffect(fun, []);
+//const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+//const useMountEffect = (fun) => useEffect(fun, []);
 
 export default function FrontPage() {
     const myRef = useRef(null);
-    useMountEffect(() => scrollToRef(myRef))
+    //useMountEffect(() => scrollToRef(myRef))
+
+    const scrollToBottom = () => {
+        myRef.current.scrollIntoView({ behavior: "smooth"})
+    }
 
     return (
         <div>
@@ -97,7 +101,7 @@ export default function FrontPage() {
                 </Nav>
                 */}
                 <BigText>Hello, I'm <span style= {{color: "lightblue", fontFamily:"Abel"}}>Nathan Ngoy</span>.</BigText>
-                <Button onClick={ () => scrollToRef(myRef)}>View my projects</Button>
+                <Button onClick={scrollToBottom}>View my projects</Button>
                 
             </Landing>
 
