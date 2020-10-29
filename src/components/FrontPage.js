@@ -46,6 +46,7 @@ const BigText = styled.div`
     font-size: 5rem;
     font-family: "Abel", sans-serif;
     margin: 0 0 20px 0;
+    padding: 0 0 1rem 0;
 `;
 
 const Button = styled.div`
@@ -57,7 +58,7 @@ const Button = styled.div`
     padding: 10px 20px;
     position: relative;
     transition: all 0.5s;
-    padding: 12px 30px 12px 30px;
+    padding: 12px 20px 12px 30px;
     margin-button: 53px;
     font-size: 1rem;
     font-family: "Abel", sans-serif;

@@ -5,10 +5,9 @@ import { findByLabelText } from '@testing-library/react';
 
 const AboutPage = styled.div`
     background: white;
-    min-height: 100vh;
     background-size: cover;
     right: 0;
-    height: 70vh;
+    height: 80vh;
     padding: 40px 0 0 0 ;
     display: block;
 `;
@@ -66,18 +65,20 @@ export default function Aboutme() {
             </style>
 
             <AboutPage>
-                <h1 className="aboutMe" style={{color: "rgb(96, 108, 136)", display: "block", fontFamily: "Abel", opacity: 0,fontSize: "3rem", textAlign: "center", transform: 'translateY(100%)'}}>About Me</h1>
+                <h1 className="aboutMe" style={{ color:"black", display: "block", fontFamily: "Abel", opacity: 0,fontSize: "3rem", textAlign: "center", transform: 'translateY(100%)'}}>About Me</h1>
                 
                 <AboutContent>
                     <img style = {imageStyle} src={require("../images/aboutPicture.jpg")}/>
                     <TextBox>
-                        <h1 style={{color: "darkblue"}}>Nathan Ngoy</h1>
+                        <h1 style={{color: "rgb(96, 108, 136)"}}>Nathan Ngoy</h1>
                         <h2 style={{color: "lightblue"}}>UC Berkeley 2019 || B.S. Mechanical Engineer</h2>
                         <p>Hello, I'm Nathan Ngoy. I'm a recent Mechanical Engineer graduate who decide to make the switch to Software Development. 
                             For most of my time in undergraduate, I've found myself enjoying the coding sections of my engineering projects more and found programming engaging and fun. UC Berkeley CS61B also peeked my interest
                             to the field of programming which ultimately led to me partaking this journey.</p>
                         <p>I have been self teaching myself programming and website development for the past 6 months with the help of the Odin Project. I've made multiple projects, ranging from fullstack websites 
-                            to incorporating evolutionary algorithm. I've also read The Algorithm Design Manual to review my  Data Structures knowledge. Check out my software projects (and my engineering projects) below, thanks for visiting!</p>
+                            to incorporating evolutionary algorithm into a PyGame. I've  read The Algorithm Design Manual to review my Data Structures knowledge. Check out my software projects (and my engineering projects) below, thanks for visiting!</p>
+
+                        <p>Email: nngoy@berkeley.edu</p>
                     </TextBox>
                     
                 </AboutContent>
