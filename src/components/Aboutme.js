@@ -78,7 +78,8 @@ export default function Aboutme() {
                         <p>I have been self teaching myself programming and website development for the past 6 months with the help of the Odin Project. I've made multiple projects, ranging from fullstack websites 
                             to incorporating evolutionary algorithm into a PyGame. I've  read The Algorithm Design Manual to review my Data Structures knowledge. Check out my software projects (and my engineering projects) below, thanks for visiting!</p>
 
-                        <p>Email: nngoy@berkeley.edu</p>
+                        
+                        <p>Check out my <span><a style={{textDecoration: "none", color: "blue"}}href = "https://drive.google.com/file/d/1PmEs6GQ2kQyRnY-JwuolcAe-b68uDxdf/view?usp=sharing">resume</a></span></p>
                     </TextBox>
                     
                 </AboutContent>

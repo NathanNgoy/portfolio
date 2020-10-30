@@ -41,23 +41,53 @@ const CardText = styled.div`
     top: 0;
     width: 100%;
     display: block;
-
+    width: 390px;
+    height: 300px;
+    background-size: cover;
 `;
 
+const imageStyle = {
+    height: '300px',
+    width: '390px',
+    backgroundSize: "cover",
+}
+
 export default function Projects() {
+    const [showBox, setshowBox] = useState(false)
+
+    const mouseOver = () => {
+        setshowBox(showBox = true)
+    }
+
+    const mouseOut = () => {
+        setshowBox(showBox = false)
+    }
+
     return (
         <ProjectPage>
             <h1 className="aboutMe" style={{ color:"black", display: "block", fontFamily: "Abel", opacity: 0,fontSize: "3rem", textAlign: "center", transform: 'translateY(100%)'}}>Projects</h1>
 
             <ProjectContent>
                 <Card>
-                    <CardText>Hello there</CardText>
+                    <div className="picture">
+                        <img style={imageStyle} src={require("../images/boardGame.JPG")}/>
+                        <div className="title">BoardGame Together</div>
+                        <div className="button">Learn More</div>
+                    </div>
                 </Card>
                 <Card>
-                    <CardText>Hello there</CardText>
+                    <div className="picture">
+                        <img style={imageStyle} src={require("../images/smartRockets.JPG")}/>
+                        <div className="title">SmartRockets</div>
+                        <div className="button">Learn More</div>
+                    </div>
                 </Card>
                 <Card>
-                    <CardText>Hello there</CardText>
+                <div className="picture">
+                        <img style={imageStyle} src={require("../images/socialBook.JPG")}/>
+                        <div className="title">SocialBook</div>
+                        <div className="button">Learn More</div>
+                    </div>
                 </Card>
             </ProjectContent>
         </ProjectPage>
