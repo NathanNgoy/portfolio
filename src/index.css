@@ -53,6 +53,9 @@ img:hover {
   cursor: pointer;
 }
 
+.picture {
+  flex-basis: 33.333333%
+}
 
 .picture:hover .title {
   opacity: 1;

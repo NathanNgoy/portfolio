@@ -12,23 +12,24 @@ const ProjectPage = styled.div`
 `;
 
 const ProjectContent = styled.div`
-    margin: 20px 0;
-    padding: 0;
     flex-wrap: wrap;
     flex-direction: row;
     box-sizing: border-box;
-    align-items: center;
     display: flex;
+    max-width: 1400px;
+    align-items: center;
     justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
 `;
 
 const Card = styled.div`
     display: inline-block;
     position: relative;
-    width: 390px;
     height: 300px;
     max-width: 100%;
-    background: white;
 `;
 
 const CardText = styled.div`
@@ -41,7 +42,6 @@ const CardText = styled.div`
     top: 0;
     width: 100%;
     display: block;
-    width: 390px;
     height: 300px;
     background-size: cover;
 `;
@@ -65,9 +65,16 @@ export default function Projects() {
 
     return (
         <ProjectPage>
-            <h1 className="aboutMe" style={{ color:"black", display: "block", fontFamily: "Abel", opacity: 0,fontSize: "3rem", textAlign: "center", transform: 'translateY(100%)'}}>Projects</h1>
+            <h1 className="aboutMe" style={{ color:"black", display: "block", fontFamily: "Abel", opacity: 0,fontSize: "3rem", textAlign: "center", transform: 'translateY(100%)'}}>Software Projects</h1>
 
             <ProjectContent>
+                <Card>
+                    <div className="picture">
+                        <img style={imageStyle} src={require("../images/socialBook.JPG")}/>
+                        <div className="title">SocialBook</div>
+                        <div className="button">Learn More</div>
+                    </div>
+                </Card>
                 <Card>
                     <div className="picture">
                         <img style={imageStyle} src={require("../images/boardGame.JPG")}/>
@@ -83,9 +90,38 @@ export default function Projects() {
                     </div>
                 </Card>
                 <Card>
-                <div className="picture">
-                        <img style={imageStyle} src={require("../images/socialBook.JPG")}/>
-                        <div className="title">SocialBook</div>
+                    <div className="picture">
+                        <img style={imageStyle} src={require("../images/bearMaps.JPG")}/>
+                        <div className="title">Bear Maps</div>
+                        <div className="button">Learn More</div>
+                    </div>
+                </Card>
+                <Card>
+                    <div className="picture">
+                        <img style={imageStyle} src={require("../images/randomMap.JPG")}/>
+                        <div className="title">Random Map Generator</div>
+                        <div className="button">Learn More</div>
+                        {/*https://www.youtube.com/watch?v=IWQrxD5S09E */}
+                    </div>
+                </Card>
+                <Card>
+                    <div className="picture">
+                        <img style={imageStyle} src={require("../images/membersOnly.JPG")}/>
+                        <div className="title">Members Only</div>
+                        <div className="button">Learn More</div>
+                    </div>
+                </Card>
+                <Card>
+                    <div className="picture">
+                        <img style={imageStyle} src={require("../images/todo.JPG")}/>
+                        <div className="title">ToDo List</div>
+                        <div className="button">Learn More</div>
+                    </div>
+                </Card>
+                <Card>
+                    <div className="picture">
+                        <img style={imageStyle} src={require("../images/localLibrary.JPG")}/>
+                        <div className="title">Local Library Inventory</div>
                         <div className="button">Learn More</div>
                     </div>
                 </Card>

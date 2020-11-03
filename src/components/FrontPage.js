@@ -47,6 +47,7 @@ const BigText = styled.div`
     font-family: "Abel", sans-serif;
     margin: 0 0 20px 0;
     padding: 0 0 1rem 0;
+    text-align: center;
 `;
 
 const Button = styled.div`
@@ -65,7 +66,11 @@ const Button = styled.div`
     color: white;
 `;
 
-const Asdf = styled.div`
+const Box = styled.div`
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `;
 
 //const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
@@ -100,9 +105,11 @@ export default function FrontPage() {
                     </NavLinks>
                 </Nav>
                 */}
-                <BigText>Hello, I'm <span style= {{color: "lightblue", fontFamily:"Abel"}}>Nathan Ngoy</span>.</BigText>
-                <Button onClick={scrollToBottom}>View my projects</Button>
-                
+
+                <Box>
+                    <BigText>Hello, I'm <span style= {{color: "lightblue", fontFamily:"Abel"}}>Nathan Ngoy</span>.</BigText>
+                    <Button onClick={scrollToBottom}>View my projects</Button>
+                </Box>
             </Landing>
 
             <div ref={myRef}></div>
