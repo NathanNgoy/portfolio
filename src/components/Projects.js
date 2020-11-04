@@ -1,7 +1,5 @@
 import React, {useEffect, useState, useRef} from 'react'
 import styled from 'styled-components'
-import { TimelineLite } from "gsap/all";
-import { findByLabelText } from '@testing-library/react';
 
 const ProjectPage = styled.div`
     background: linear-gradient(135deg, rgb(194, 194, 194) 0%, rgb(194, 194, 194) 100%);
@@ -52,17 +50,9 @@ const imageStyle = {
     backgroundSize: "cover",
 }
 
-export default function Projects() {
+export default function Projects(props) {
     const [showBox, setshowBox] = useState(false)
-
-    const mouseOver = () => {
-        setshowBox(showBox = true)
-    }
-
-    const mouseOut = () => {
-        setshowBox(showBox = false)
-    }
-
+    
     return (
         <ProjectPage>
             <h1 className="aboutMe" style={{ color:"black", display: "block", fontFamily: "Abel", opacity: 0,fontSize: "3rem", textAlign: "center", transform: 'translateY(100%)'}}>Software Projects</h1>
@@ -72,14 +62,14 @@ export default function Projects() {
                     <div className="picture">
                         <img style={imageStyle} src={require("../images/socialBook.JPG")}/>
                         <div className="title">SocialBook</div>
-                        <div className="button">Learn More</div>
+                        <div onClick={e => props.toggle()} className="button">Learn More</div>
                     </div>
                 </Card>
                 <Card>
                     <div className="picture">
                         <img style={imageStyle} src={require("../images/boardGame.JPG")}/>
                         <div className="title">BoardGame Together</div>
-                        <div className="button">Learn More</div>
+                        <div onClick={e => console.log("clicked")} className="button">Learn More</div>
                     </div>
                 </Card>
                 <Card>
