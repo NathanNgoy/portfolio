@@ -12,7 +12,8 @@ const ContactPage = styled.div`
 export default function Contact() {
     return (
         <ContactPage>
-            <h1 className="aboutMe" style={{ color:"white", display: "block", fontFamily: "Abel", opacity: 0,fontSize: "3rem", textAlign: "center", transform: 'translateY(100%)'}}>Contact</h1>
+            {/*<h1 className="aboutMe" style={{ color:"white", display: "block", fontFamily: "Abel", opacity: 0,fontSize: "3rem", textAlign: "center", transform: 'translateY(100%)'}}>Contact</h1>*/}
+            <h1 className="aboutMe" style={{ color:"white", display: "block", fontFamily: "Abel", opacity: 1,fontSize: "3rem", textAlign: "center"}}>Contact</h1>
         </ContactPage>
     )
 }

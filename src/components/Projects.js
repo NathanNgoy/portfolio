@@ -55,7 +55,8 @@ export default function Projects(props) {
     
     return (
         <ProjectPage>
-            <h1 className="aboutMe" style={{ color:"black", display: "block", fontFamily: "Abel", opacity: 0,fontSize: "3rem", textAlign: "center", transform: 'translateY(100%)'}}>Software Projects</h1>
+            {/*<h1 className="aboutMe" style={{ color:"black", display: "block", fontFamily: "Abel", opacity: 0,fontSize: "3rem", textAlign: "center", transform: 'translateY(100%)'}}>Software Projects</h1>*/}
+            <h1 className="aboutMe" style={{ color:"black", display: "block", fontFamily: "Abel",fontSize: "3rem", textAlign: "center"}}>Software Projects</h1>
 
             <ProjectContent>
                 <Card>

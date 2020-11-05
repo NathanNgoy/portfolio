@@ -65,7 +65,8 @@ export default function Aboutme() {
             </style>
 
             <AboutPage>
-                <h1 className="aboutMe" style={{ color:"black", display: "block", fontFamily: "Abel", opacity: 0,fontSize: "3rem", textAlign: "center", transform: 'translateY(100%)'}}>About Me</h1>
+                {/*<h1 className="aboutMe" style={{ color:"black", display: "block", fontFamily: "Abel", opacity: 0,fontSize: "3rem", textAlign: "center", transform: 'translateY(100%)'}}>About Me</h1>*/}
+                <h1 className="aboutMe" style={{ color:"black", display: "block", fontFamily: "Abel",fontSize: "3rem", textAlign: "center"}}>About Me</h1>
                 
                 <AboutContent>
                     <img style = {imageStyle} src={require("../images/aboutPicture.jpg")}/>
@@ -80,6 +81,7 @@ export default function Aboutme() {
 
                         
                         <p>Check out my <span><a style={{textDecoration: "none", color: "blue"}}href = "https://drive.google.com/file/d/1PmEs6GQ2kQyRnY-JwuolcAe-b68uDxdf/view?usp=sharing">resume</a></span></p>
+                        <p>Email me: nngoy@berkeley.edu</p>
                     </TextBox>
                     
                 </AboutContent>
