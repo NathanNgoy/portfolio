@@ -62,35 +62,35 @@ export default function Projects(props) {
                     <div className="picture">
                         <img style={imageStyle} src={require("../images/socialBook.JPG")}/>
                         <div className="title">SocialBook</div>
-                        <div onClick={e => props.toggle()} className="button">Learn More</div>
+                        <div onClick={() => {props.toggle(); props.setNewID(0)}} className="button">Learn More</div>
                     </div>
                 </Card>
                 <Card>
                     <div className="picture">
                         <img style={imageStyle} src={require("../images/boardGame.JPG")}/>
                         <div className="title">BoardGame Together</div>
-                        <div onClick={e => console.log("clicked")} className="button">Learn More</div>
+                        <div onClick={() => {props.toggle(); props.setNewID(1)}} className="button">Learn More</div>
                     </div>
                 </Card>
                 <Card>
                     <div className="picture">
                         <img style={imageStyle} src={require("../images/smartRockets.JPG")}/>
                         <div className="title">SmartRockets</div>
-                        <div className="button">Learn More</div>
+                        <div onClick={() => {props.toggle(); props.setNewID(2)}} className="button">Learn More</div>
                     </div>
                 </Card>
                 <Card>
                     <div className="picture">
                         <img style={imageStyle} src={require("../images/bearMaps.JPG")}/>
                         <div className="title">Bear Maps</div>
-                        <div className="button">Learn More</div>
+                        <div onClick={() => {props.toggle(); props.setNewID(3)}} className="button">Learn More</div>
                     </div>
                 </Card>
                 <Card>
                     <div className="picture">
                         <img style={imageStyle} src={require("../images/randomMap.JPG")}/>
                         <div className="title">Random Map Generator</div>
-                        <div className="button">Learn More</div>
+                        <div onClick={() => {props.toggle(); props.setNewID(4)}} className="button">Learn More</div>
                         {/*https://www.youtube.com/watch?v=IWQrxD5S09E */}
                     </div>
                 </Card>
@@ -98,21 +98,21 @@ export default function Projects(props) {
                     <div className="picture">
                         <img style={imageStyle} src={require("../images/membersOnly.JPG")}/>
                         <div className="title">Members Only</div>
-                        <div className="button">Learn More</div>
+                        <div onClick={() => {props.toggle(); props.setNewID(5)}} className="button">Learn More</div>
                     </div>
                 </Card>
                 <Card>
                     <div className="picture">
                         <img style={imageStyle} src={require("../images/todo.JPG")}/>
                         <div className="title">ToDo List</div>
-                        <div className="button">Learn More</div>
+                        <div onClick={() => {props.toggle(); props.setNewID(6)}} className="button">Learn More</div>
                     </div>
                 </Card>
                 <Card>
                     <div className="picture">
                         <img style={imageStyle} src={require("../images/localLibrary.JPG")}/>
                         <div className="title">Local Library Inventory</div>
-                        <div className="button">Learn More</div>
+                        <div onClick={() => {props.toggle(); props.setNewID(7)}} className="button">Learn More</div>
                     </div>
                 </Card>
             </ProjectContent>

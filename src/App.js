@@ -9,7 +9,8 @@ import InfoBox from './components/Infobox'
 
 export default class App extends Component {
   state = {
-    seen: false
+    seen: false,
+    id: 0
   }
 
   togglePop = () => {
@@ -19,14 +20,20 @@ export default class App extends Component {
     console.log(this.state.seen)
   }
 
+  setID = (newid) => {
+    this.setState({
+      id: newid
+    })
+  }
+
   render() {
     return (
       <div className="App">
-        {this.state.seen ? <InfoBox toggle={this.togglePop}/> : null}
+        {this.state.seen ? <InfoBox toggle={this.togglePop} index={this.state.id}/> : null}
         <FrontPage />
         <Intro />
         <Aboutme />
-        <Projects toggle={this.togglePop}/>
+        <Projects toggle={this.togglePop} setNewID = {this.setID}/>
         <Contact />
         <Footer />
       </div>
