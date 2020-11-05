@@ -95,17 +95,6 @@ export default function FrontPage() {
             </Background>
             
             <Landing>
-                {/*
-                <Nav>
-                    <h1 id="logo">Afloat</h1>
-                    <NavLinks>
-                        <li style = {{paddingLeft: "5rem",}}>Home</li>
-                        <li style = {{paddingLeft: "5rem"}}>Contact</li>
-                        <li style = {{paddingLeft: "5rem"}}>About</li>
-                    </NavLinks>
-                </Nav>
-                */}
-
                 <Box>
                     <BigText>Hello, I'm <span style= {{color: "lightblue", fontFamily:"Abel"}}>Nathan Ngoy</span>.</BigText>
                     <Button onClick={scrollToBottom}>View my projects</Button>

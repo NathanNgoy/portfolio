@@ -13,6 +13,17 @@ const images = [
     require("../images/localLibrary.JPG")
 ];
 
+const links = [
+    "https://github.com/NathanNgoy/SocialBook",
+    "https://github.com/NathanNgoy/Boardgame-Website",
+    "https://github.com/NathanNgoy/SmartRockets",
+    "https://sp18.datastructur.es/materials/proj/proj3/proj3",
+    "https://www.youtube.com/watch?v=IWQrxD5S09E",
+    "https://github.com/NathanNgoy/members-only",
+    "https://github.com/NathanNgoy/TodoList",
+    "https://github.com/NathanNgoy/LocalLibrary"
+];
+
 const titles = [
     "SocialBook",
     "BoardGame Together",
@@ -61,9 +72,14 @@ export class Infobox extends Component {
                     <TextBox>
                         <div className="infotitle">{titles[this.props.index]}</div>
                         <div className="infotag">{tags[this.props.index]}</div>
-                        <div className="infodetail">{details[this.props.index]}</div>
+                        <div className="infodetail">{details[this.props.index]}</div> 
                     </TextBox>
-                    <div onClick={e => this.handleClick()} className="exit">x</div>
+                    <Bottom>
+                        <GitHubButton>
+                        <a style={{textDecoration: "none", color: "white"}} href={links[this.props.index]}>View Project</a>
+                        </GitHubButton>
+                        <div onClick={e => this.handleClick()} className="exit">x</div>
+                    </Bottom>
                 </InfoContent>
             </InfoBackground>
         )
@@ -103,7 +119,7 @@ const InfoContent = styled.div`
 `;
 
 const TextBox = styled.div`
-    padding: 35px 60px 60px 25px;
+    padding: 35px 60px 20px 25px;
     border-top: 3px solid black;
     box-sizing: border-box;
     color: white;
@@ -115,5 +131,23 @@ const imageStyles = {
     position: 'relative',
     display: 'block'
 }
+
+const GitHubButton = styled.div`
+    cursor: pointer;
+    background:  rgb(194, 194, 194);
+    font-size: 10pt;
+    font-weight: 600;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+`;
+
+const Bottom = styled.div`
+    display flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 5px 15px 25px;
+`;
 
 export default Infobox
