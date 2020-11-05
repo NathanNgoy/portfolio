@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2685585c.chunk.css",
+    "main.js": "/static/js/main.d7913e52.chunk.js",
+    "main.js.map": "/static/js/main.d7913e52.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/js/2.15209668.chunk.js": "/static/js/2.15209668.chunk.js",
+    "static/js/2.15209668.chunk.js.map": "/static/js/2.15209668.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9f34d9ca34b99d398d2cea457bb19cb1.js": "/precache-manifest.9f34d9ca34b99d398d2cea457bb19cb1.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.2685585c.chunk.css.map": "/static/css/main.2685585c.chunk.css.map",
+    "static/js/2.15209668.chunk.js.LICENSE.txt": "/static/js/2.15209668.chunk.js.LICENSE.txt",
+    "static/media/aboutPicture.jpg": "/static/media/aboutPicture.7df2b09a.jpg",
+    "static/media/bearMaps.JPG": "/static/media/bearMaps.8702bfff.JPG",
+    "static/media/boardGame.JPG": "/static/media/boardGame.6d42911c.JPG",
+    "static/media/localLibrary.JPG": "/static/media/localLibrary.09eb4954.JPG",
+    "static/media/membersOnly.JPG": "/static/media/membersOnly.d64f61c3.JPG",
+    "static/media/randomMap.JPG": "/static/media/randomMap.ee126b57.JPG",
+    "static/media/smartRockets.JPG": "/static/media/smartRockets.685f7ec2.JPG",
+    "static/media/socialBook.JPG": "/static/media/socialBook.25baf0ed.JPG",
+    "static/media/todo.JPG": "/static/media/todo.8053e92b.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19ccc7f6.js",
+    "static/js/2.15209668.chunk.js",
+    "static/css/main.2685585c.chunk.css",
+    "static/js/main.d7913e52.chunk.js"
+  ]
+}
