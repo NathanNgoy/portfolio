@@ -45,17 +45,14 @@ export default function Intro()  {
     let slideTarget = null;
     let introBGTarget = null;
 
-    /*
     useEffect(() => {
         Tl.to('.text', {y: "0%", duration: 1, stagger: 0.25});
         Tl.to(slideTarget, {y: "-100%", duration: 1.5, delay: 0.5});
         Tl.to(introBGTarget, {y: "-100%", duration: 1}, "-=1");
     }, [])
-    */
 
     return (
         <div>
-            {/* 
             <IntroBG ref = {e => introBGTarget = e}>
                 <IntroText>
                     <Hide>
@@ -71,7 +68,6 @@ export default function Intro()  {
             </IntroBG>
 
             <Slider ref={e => slideTarget = e}></Slider>
-            */}
         </div>
     )
 }
