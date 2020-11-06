@@ -81,6 +81,7 @@ export default function Aboutme() {
 
                         
                         <p>Check out my <span><a style={{textDecoration: "none", color: "blue"}}href = "https://drive.google.com/file/d/1PmEs6GQ2kQyRnY-JwuolcAe-b68uDxdf/view?usp=sharing">resume</a></span></p>
+                        <p>Check out my <span><a style={{textDecoration: "none", color: "blue"}}href= "https://github.com/NathanNgoy">Github</a></span></p>
                         <p>Email me: nngoy@berkeley.edu</p>
                     </TextBox>
                     

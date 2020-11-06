@@ -13,6 +13,7 @@
     "react-dom": "^17.0.0",
     "react-gsap": "^2.2.1",
     "react-particles-js": "^3.4.0",
+    "react-responsive-carousel": "^3.2.10",
     "react-scripts": "3.4.4",
     "react-social-icons": "^4.1.0",
     "styled-components": "^5.2.0"
@@ -23,9 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

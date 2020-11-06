@@ -3,18 +3,18 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const images = [
-    require("../images/socialBook.JPG"),
-    require("../images/boardGame.JPG"),
-    require("../images/smartRockets.JPG"),
+    require("../images/socialDemo.gif"),
+    require("../images/boardDemo.gif"),
+    require("../images/smartDemo.gif"),
     require("../images/bearMaps.JPG"),
     require("../images/randomMap.JPG"),
-    require("../images/membersOnly.JPG"),
-    require("../images/todo.JPG"),
+    require("../images/membersDemo.gif"),
+    require("../images/todoDemo.gif"),
     require("../images/localLibrary.JPG")
 ];
 
 const links = [
-    "https://github.com/NathanNgoy/SocialBook",
+    "https://socialbook-website-demo.herokuapp.com/",
     "https://github.com/NathanNgoy/Boardgame-Website",
     "https://github.com/NathanNgoy/SmartRockets",
     "https://sp18.datastructur.es/materials/proj/proj3/proj3",
@@ -47,12 +47,12 @@ const tags = [
 ]
 
 const details = [
-    "SocialBook is a miniamlistic inspired social media platform with the goal to streamline communicating and connecting with friends. The website allows users to create posts and comments, react to posts in their timeline, and search for new friends",
+    "SocialBook is a miniamlistic inspired social media platform with the goal to streamline communicating and connecting with friends. The website allows users to create posts and comments, react to posts in their timeline, and search for new friends. The full stack project is deployed on Heroku.",
     "BoardGame Online is a full stack website that display board games for sale. The website allows for CRUD functionality for owner of the store that allow the owner to keep track of boardgame inventory and add, edit, and delete boardgames.",
     "SmartRockets is a program that utilizes evolutionary algorithm to help guide rockets closer to the desired target with each new generation. Users are able to interact with the program by placing obstacles for the rockets to circumvent",
     "BearMaps is a web mapping application of Berkeley that uses real-world mapping data to power the backend of the application. Functionality of this API includes: Map Rastering (given coordinates - display appropriate map), Zooming and Scrolling, " +  
-    "Routing (street direction and using A* algorithm to optimize routes), Location Pins (finding all locations that matches string). Due to UC Berkeley academic policy, I am unable to post the github link; however information of the project can be found here: https://sp18.datastructur.es/materials/proj/proj3/proj3",
-    "Battle of Hugs is a tile based game inspired by UC Berkeley CS Professor Hugs. Given a seed, the map will randomly generate a tile based maze that the user will then be able to transverse and complete tasks. Due to UC Berkeley academic policy, I am unable to post the github link; however video of the compelted project can be found here: https://www.youtube.com/watch?v=IWQrxD5S09E",
+    "Routing (street direction and using A* algorithm to optimize routes), Location Pins (finding all locations that matches string). Due to UC Berkeley academic policy, I am unable to post the github link; however information of the project can be found in the project link",
+    "Battle of Hugs is a tile based game inspired by UC Berkeley CS Professor Hugs. Given a seed, the map will randomly generate a tile based maze that the user will then be able to transverse and complete tasks. Due to UC Berkeley academic policy, I am unable to post the github link; however video of the compelted project can be found in the project link",
     "Members Only is an 'exclusive clubhouse' where members can write posts about other members or nonmembers. However, only members can see the author of the post while outside can only see the story and wonder who wrote it. The blogging website was my first introduction to incorporating a backend authentication and cookie system for signup and login.",
     "ToDo List is a task manager API where user is able to write down tasks, mark tasks as complete, and delete tasks. ToDo List was my first introduction to ReactJS and using ReactJS to complete a project.",
     "Local Library Inventory is an inventory tracking website that allows for CRUD functionality to keep track of library books. Users are able to add, edit, or delete books, authors, and genres."

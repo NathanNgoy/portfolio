@@ -12,7 +12,11 @@ code {
     monospace;
 }
 
-img:hover {
+.images { 
+  object-fit: cover;
+}
+
+.display:hover {
   -webkit-filter: blur(2px);
   filter: blur(2px);
 }
@@ -84,7 +88,7 @@ img:hover {
 }
 
 .picture {
-  flex-basis: 33.333333%
+  flex-basis: 33.333333%;
 }
 
 .picture:hover .title {

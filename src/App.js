@@ -3,6 +3,7 @@ import FrontPage from './components/FrontPage'
 import Intro from './components/Intro'
 import Aboutme from './components/Aboutme'
 import Projects from './components/Projects'
+import MechProjects from './components/MechProjects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import InfoBox from './components/Infobox'
@@ -34,6 +35,7 @@ export default class App extends Component {
         <Intro />
         <Aboutme />
         <Projects toggle={this.togglePop} setNewID = {this.setID}/>
+        <MechProjects toggle={this.togglePop} setNewID = {this.setID}/>
         <Contact />
         <Footer />
       </div>
