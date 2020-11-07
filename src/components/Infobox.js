@@ -3,13 +3,13 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const images = [
-    require("../images/socialBook.JPG"),
-    require("../images/boardGame.JPG"),
-    require("../images/smartRockets.JPG"),
+    require("../images/socialDemo.gif"),
+    require("../images/boardDemo.gif"),
+    require("../images/smartDemo.gif"),
     require("../images/bearMaps.JPG"),
     require("../images/randomMap.JPG"),
-    require("../images/membersOnly.JPG"),
-    require("../images/todo.JPG"),
+    require("../images/membersDemo.gif"),
+    require("../images/todoDemo.gif"),
     require("../images/localLibrary.JPG"),
 ];
 
