@@ -6,7 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 const ProjectPage = styled.div`
     background: linear-gradient(135deg, rgb(194, 194, 194) 0%, rgb(194, 194, 194) 100%);
-    min-height: 100vh;
+    min-height: 75vh;
     background-size: cover;
     right: 0;
     padding: 40px 0 0 0 ;
@@ -64,83 +64,36 @@ export default function MechProjects(props) {
             <ProjectContent>
                 <Card>
                     <div className="picture">
-                        <img className="images" style={imageStyle} src={require("../images/hand/cover.jpg")}/>
+                        <img className="display" style={imageStyle} src={require("../images/hand/cover.jpg")}/>
                         <div className="title">Merari's Hand</div>
                         <div className="highlight">Prosthetic Project</div>
-                        <div onClick={() => {props.toggle(); props.setNewID(0)}} className="button">Learn More</div>
+                        <div onClick={() => {props.toggle(); props.setNewID(8)}} className="button">Learn More</div>
                     </div>
                 </Card>
                 <Card>
                     <div className="picture">
-                        <img className="images" style={imageStyle} src={require("../images/boardGame.JPG")}/>
-                        <div className="title">BoardGame Together</div>
-                        <div className="highlight-white">NodeJS/ BootStrap</div>
-                        <div onClick={() => {props.toggle(); props.setNewID(1)}} className="button">Learn More</div>
+                        <img className="display" style={imageStyle} src={require("../images/humm/cover.jpg")}/>
+                        <div className="title">Humm</div>
+                        <div className="highlight">Next Generation of Headbands</div>
+                        <div onClick={() => {props.toggle(); props.setNewID(9)}} className="button">Learn More</div>
                     </div>
                 </Card>
                 <Card>
                     <div className="picture">
-                        <img className="images" style={imageStyle} src={require("../images/smartRockets.JPG")}/>
-                        <div className="title">SmartRockets</div>
-                        <div className="highlight-white">Python</div>
-                        <div onClick={() => {props.toggle(); props.setNewID(2)}} className="button">Learn More</div>
+                        <img className="display" style={imageStyle} src={require("../images/hyperloop/cover.jpg")}/>
+                        <div className="title">Berkeley Hyperloop</div>
+                        <div className="highlight-white">Transportation Technologies</div>
+                        <div onClick={() => {props.toggle(); props.setNewID(10)}} className="button">Learn More</div>
                     </div>
                 </Card>
                 <Card>
                     <div className="picture">
-                        <img className="images" style={imageStyle} src={require("../images/bearMaps.JPG")}/>
-                        <div className="title">Bear Maps</div>
-                        <div className="highlight">Java</div>
-                        <div onClick={() => {props.toggle(); props.setNewID(3)}} className="button">Learn More</div>
+                        <img className="display" style={imageStyle} src={require("../images/suitcase/cover.jpg")}/>
+                        <div className="title">Smart Suitcase</div>
+                        <div className="highlight">Autonomously Driven Suitcase</div>
+                        <div onClick={() => {props.toggle(); props.setNewID(11)}} className="button">Learn More</div>
                     </div>
                 </Card>
-                <Card>
-                    <div className="picture">
-                        <img className="images" style={imageStyle} src={require("../images/randomMap.JPG")}/>
-                        <div className="title">Battle of Hugs</div>
-                        <div className="highlight-white">Java</div>
-                        <div onClick={() => {props.toggle(); props.setNewID(4)}} className="button">Learn More</div>
-                        {/*https://www.youtube.com/watch?v=IWQrxD5S09E */}
-                    </div>
-                </Card>
-                <Card>
-                    <div className="picture">
-                        <img className="images" style={imageStyle} src={require("../images/membersOnly.JPG")}/>
-                        <div className="title">Members Only</div>
-                        <div className="highlight">NodeJS/ BootStrap</div>
-                        <div onClick={() => {props.toggle(); props.setNewID(5)}} className="button">Learn More</div>
-                    </div>
-                </Card>
-                <Card>
-                    <div className="picture">
-                        <img className="images" style={imageStyle} src={require("../images/todo.JPG")}/>
-                        <div className="title">ToDo List</div>
-                        <div className="highlight">ReactJS</div>
-                        <div onClick={() => {props.toggle(); props.setNewID(6)}} className="button">Learn More</div>
-                    </div>
-                </Card>
-                <Card>
-                    <div className="picture">
-                        <img className="images" style={imageStyle} src={require("../images/localLibrary.JPG")}/>
-                        <div className="title">Library Inventory</div>
-                        <div className="highlight">NodeJS</div>
-                        <div onClick={() => {props.toggle(); props.setNewID(7)}} className="button">Learn More</div>
-                    </div>
-                </Card>
-                <Carousel>
-                    <div>
-                        <img src={require("../images/localLibrary.JPG")} />
-                        <p className="legend">Legend 1</p>
-                    </div>
-                    <div>
-                        <img src={require("../images/localLibrary.JPG")}/>
-                        <p className="legend">Legend 2</p>
-                    </div>
-                    <div>
-                        <img src={require("../images/localLibrary.JPG")} />
-                        <p className="legend">Legend 3</p>
-                    </div>
-                </Carousel>
             </ProjectContent>
         </ProjectPage>
     )

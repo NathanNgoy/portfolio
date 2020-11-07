@@ -10,7 +10,7 @@ const images = [
     require("../images/randomMap.JPG"),
     require("../images/membersDemo.gif"),
     require("../images/todoDemo.gif"),
-    require("../images/localLibrary.JPG")
+    require("../images/localLibrary.JPG"),
 ];
 
 const links = [

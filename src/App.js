@@ -36,7 +36,6 @@ export default class App extends Component {
         <Aboutme />
         <Projects toggle={this.togglePop} setNewID = {this.setID}/>
         <MechProjects toggle={this.togglePop} setNewID = {this.setID}/>
-        <Contact />
         <Footer />
       </div>
     );

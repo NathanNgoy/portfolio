@@ -87,6 +87,18 @@ code {
   padding: 0px 5px;
 }
 
+.highlight-gray {
+  color:gray;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  padding: 0px 5px;
+}
+
 .picture {
   flex-basis: 33.333333%;
 }
